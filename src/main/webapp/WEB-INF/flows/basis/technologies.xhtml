@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:c="http://java.sun.com/jsp/jstl/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+
+<f:view contentType="text/html">
+
+    <body>
+
+    <p:layout id="techn_layout" styleClass="prim_layout" >
+
+        <!--<p:layoutUnit position="west" resizable="true" size="100" minSize="40" maxSize="200">-->
+
+        <!--</p:layoutUnit>-->
+
+        <p:layoutUnit position="center" size="550" style="padding-left:20px">
+            <h:outputText value="#{resourceBundle.technologies_list}" escape="false" styleClass="central_message"/>
+        </p:layoutUnit>
+
+        <p:layoutUnit position="east" size="440" style="text-align:center">
+            <p:graphicImage value="/images/basis/oracle_sun_mysql.jpg"  width="300" /> <br/>
+            <p:graphicImage value="/images/basis/space.jpg"  width="230"  height="20"/> <br/>
+
+            <p:graphicImage value="/images/basis/spring.jpg"  width="133"/>
+            <p:graphicImage value="/images/basis/postgres.jpg"  width="133"/>
+            <p:graphicImage value="/images/basis/space.jpg"  width="230"  height="20"/> <br/>
+
+
+            <p:graphicImage value="/images/basis/hibernate.jpg"  width="230"/>
+            <p:graphicImage value="/images/basis/spring-webflow.jpg"  width="130"/>
+            <p:graphicImage value="/images/basis/space.jpg"  width="230"  height="20"/> <br/>
+
+            <p:graphicImage value="/images/basis/tomcat.jpg"  width="163" />
+             <p:graphicImage value="/images/basis/jboss.jpg"  width="130"/>
+            <p:graphicImage value="/images/basis/space.jpg"  width="230"  height="20"/> <br/>
+
+
+
+
+        </p:layoutUnit>
+
+
+    </p:layout>
+
+    </body>
+
+</f:view>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:c="http://java.sun.com/jsp/jstl/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+
+<f:view contentType="text/html">
+
+    <body>
+
+    <p:layout id="java_layout" styleClass="prim_layout" >
+
+        <p:layoutUnit position="west" resizable="false" size="260">
+            <p:graphicImage value="/images/basis/space.jpg"  width="250"  height="50"/> <br/>
+
+            <p:graphicImage value="/images/basis/community.png"  width="250"/> <br/>
+            <p:graphicImage value="/images/basis/space.jpg"  width="250"  height="20"/> <br/>
+        </p:layoutUnit>
+
+        <p:layoutUnit position="center"  size="720">
+          <div class="central_message">
+            <h:outputText  value="#{resourceBundle.home_central_content}"  escape="false"/>
+            </div>
+        </p:layoutUnit>
+
+
+    </p:layout>
+
+    </body>
+
+</f:view>
+</html>

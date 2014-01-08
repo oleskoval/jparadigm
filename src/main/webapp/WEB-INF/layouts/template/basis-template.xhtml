@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:c="http://java.sun.com/jsp/jstl/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+
+<f:view contentType="text/html">
+
+    <h:head>
+        <title>
+            <ui:insert name="title-name">
+                JParadigm
+            </ui:insert>
+        </title>
+        <link rel="stylesheet" type="text/css" href="${request.contextPath}/styles/basis/basis.css"/>
+        <ui:insert name="headIncludes"/>
+    </h:head>
+
+
+    <body>
+
+    <!-- start header -->
+
+    <div id="header">
+
+        <div id="logo">
+            <ui:insert name="logo">
+            </ui:insert>
+        </div>
+
+        <ui:insert name="top-menu">
+            <h:form id="top-menu-form">
+                <div id="menu">
+                    <ul id="main">
+                        <li>
+                            <ui:insert name="top-link1">
+                                <a href="#">Homepage</a>
+                            </ui:insert>
+                        </li>
+                        <li>
+                            <ui:insert name="top-link2">
+                                <a href="#">Products</a>
+                            </ui:insert>
+                        </li>
+                        <li>
+                            <ui:insert name="top-link3">
+                                <a href="#">Services</a>
+                            </ui:insert>
+                        </li>
+                        <li>
+                            <ui:insert name="top-link4">
+                                <a href="#">About Us</a>
+                            </ui:insert>
+                        </li>
+                        <li>
+                            <ui:insert name="top-link5">
+                                <a href="#">Contact Us</a>
+                            </ui:insert>
+                        </li>
+                        <!--<li>-->
+                        <!--<ui:insert name="top-link6">-->
+                            <!--<a href="#"></a>-->
+                        <!--</ui:insert>-->
+                        <!--</li>-->
+
+                    </ul>
+                </div>
+            </h:form>
+        </ui:insert>
+
+    </div>
+    <!-- end header -->
+    <div id="wrapper">
+        <!-- start page -->
+        <div id="page">
+
+
+            <!-- start content -->
+
+            <div id="content">
+                <div id="decontent">
+                    <div class="flower">
+                        <ui:insert name="central-content">
+
+                            <ui:insert name="topCenterImage">
+                                <img src="${pageContext.request.contextPath}/images/basis/img06.jpg" alt="" width="510"
+                                     height="250"/>
+                            </ui:insert>
+
+                        </ui:insert>
+                    </div>
+                </div>
+
+            </div>
+            <!-- end content -->
+
+            <!-- start sidebars -->
+
+
+            <!-- end sidebars -->
+            <div style="clear: both;">&nbsp;</div>
+        </div>
+        <!-- end page -->
+    </div>
+    <div id="footer">
+        <p class="copyright">
+            <ui:insert name="copyright">
+                &copy;&nbsp;&nbsp;2013 All Rights Reserved &nbsp;&bull;&nbsp; Design by <a
+                    href="http://www.jparadigm.net/">JParadigm</a>.
+            </ui:insert>
+        </p>
+
+        <p class="link">
+            <ui:insert name="bottomLinks">
+                <a href="#">Privacy Policy</a>&nbsp;&#8226;&nbsp;<a href="#">Terms of Use</a>
+            </ui:insert>
+        </p>
+    </div>
+
+
+    </body>
+
+</f:view>
+</html>

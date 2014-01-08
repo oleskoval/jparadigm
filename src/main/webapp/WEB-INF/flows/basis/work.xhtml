@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+
+<f:view contentType="text/html">
+
+    <body>
+
+    <p:layout id="work_layout" styleClass="prim_layout" >
+
+        <!--<p:layoutUnit position="west" size="10">-->
+            <!--<p:graphicImage value="/images/basis/space.jpg"  width="10"  height="20"/> <br/>-->
+        <!--</p:layoutUnit>-->
+
+        <p:layoutUnit position="center" size="990" style="text-align:left; padding-left: 20px;">
+            <h:outputLabel for="work_desc"    value="#{resourceBundle.how_we_work_description_title}" escape="false" styleClass="central_message"/>
+            <br/>
+            <h:outputText id="work_desc" value="#{resourceBundle.how_we_work_description}" escape="false" styleClass="central_message"/>
+        </p:layoutUnit>
+
+        <!--<p:layoutUnit position="east" size="10">-->
+            <!--<p:graphicImage value="/images/basis/space.jpg"  width="10"  height="20"/> <br/>-->
+            <!--&lt;!&ndash;<p:graphicImage value="/images/basis/technologies2.jpg"  width="250"  height="125"/>&ndash;&gt;-->
+        <!--</p:layoutUnit>-->
+
+
+    </p:layout>
+
+    </body>
+
+</f:view>
+</html>

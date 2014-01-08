@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flow xmlns="http://www.springframework.org/schema/webflow"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.springframework.org/schema/webflow http://www.springframework.org/schema/webflow/spring-webflow-2.0.xsd">
+
+    <var name="basisBean" class="com.sunny.rose.backing.BasisBean"/>
+
+
+    <view-state id="basis" view="basis.xhtml">
+
+        <!--<transition on="openChartEngine">-->
+            <!--<evaluate expression="basisBean.openChartEngine()"/>-->
+        <!--</transition>-->
+
+        <!--<transition on="openContactManagement">-->
+            <!--<evaluate expression="basisBean.openContactManagement()"/>-->
+        <!--</transition>-->
+
+        <!--<transition on="openShopWorkflow">-->
+            <!--<evaluate expression="basisBean.openShop()"/>-->
+        <!--</transition>-->
+
+       <!--<transition on="openParking">-->
+            <!--<evaluate expression="basisBean.openParking()"/>-->
+        <!--</transition>-->
+
+         <!--<transition on="showContacts">-->
+            <!--<evaluate expression="basisBean.showContacts()"/>-->
+        <!--</transition>-->
+
+        <!--<transition on="showMap">-->
+            <!--<evaluate expression="basisBean.showMap()"/>-->
+        <!--</transition>-->
+
+    </view-state>
+
+    <end-state id="complete" view="complete.xhtml"/>
+
+</flow>

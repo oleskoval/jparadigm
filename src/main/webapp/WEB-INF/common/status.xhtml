@@ -1,0 +1,50 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:p="http://primefaces.org/ui">
+
+    <!--<p:ajaxStatus>-->
+    <!--<f:facet name="prestart">-->
+    <!--<h:outputText value="Буду запрашивать..." />-->
+    <!--</f:facet>-->
+    <!--<f:facet name="error">-->
+    <!--<h:outputText value="Ошибка" />-->
+    <!--</f:facet>-->
+    <!--<f:facet name="success">-->
+    <!--<h:outputText value="Успешно" />-->
+    <!--</f:facet>-->
+    <!--<f:facet name="default">-->
+    <!--<h:outputText value="Сплю" />-->
+    <!--</f:facet>-->
+    <!--<f:facet name="start">-->
+    <!--<h:outputText value="Запрашиваю..." />-->
+    <!--</f:facet>-->
+    <!--<f:facet name="complete">-->
+    <!--<h:outputText value="Ответили" />-->
+    <!--</f:facet>-->
+    <!--</p:ajaxStatus>-->
+  <div id="message" style="color: red">
+    <p:ajaxStatus>
+        <f:facet name="prestart">
+            <h:outputText value="Starting..."/>
+        </f:facet>
+        <f:facet name="error">
+            <h:outputText value="Error"/>
+        </f:facet>
+        <f:facet name="success">
+            <h:outputText value="Success"/>
+        </f:facet>
+        <f:facet name="default">
+            <h:outputText value="Idle"/>
+        </f:facet>
+        <f:facet name="start">
+            <h:outputText value="Sending"/>
+        </f:facet>
+        <f:facet name="complete">
+            <h:outputText value="Done"/>
+        </f:facet>
+    </p:ajaxStatus>
+  </div>
+
+</ui:composition>

@@ -1,0 +1,26 @@
+<project name="Thrift generator" default="copy-english-properties" basedir=".">
+    <description>
+        Thrift generator
+    </description>
+    <property file="build.properties"/>
+
+    <target name="rename" description="rename generated file">
+        <!--<move file="${dest.path}/${source.ru.file}" tofile="${dest.path}/${dest.ru.file}" overwrite="true"/>-->
+        <copy file="${source.part}/${source.en.file}" tofile="${dest.path}/${dest.en.file}" overwrite="true"/>
+        <copy file="${source.part}/${source.en.file}" tofile="${dest.path}/${dest.common.file}" overwrite="true"/>
+    </target>
+
+    <target  name="convert" description="convert cyrillic">
+        <native2ascii encoding="UTF-8" src="${source.part}" dest="${dest.path}"
+                      includes="**/${source.ru.file}"/>
+    </target>
+
+    <target name="copy-english-properties" depends="rename">
+        <copy file="${source.part}/${source.en.file}" tofile="${dest.path}/${dest.en.file}" overwrite="true"/>
+        <echo message="file ${source.part}/${source.en.file} copied to ${dest.path}/${dest.en.file}"/>
+        <copy file="${source.part}/${source.en.file}" tofile="${dest.path}/${dest.common.file}" overwrite="true"/>
+        <echo message="file ${source.part}/${source.en.file} copied to ${dest.path}/${dest.common.file}"/>
+
+    </target>
+
+</project>
